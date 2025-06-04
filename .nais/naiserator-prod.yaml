@@ -2,9 +2,9 @@ apiVersion: "nais.io/v1alpha1"
 kind: "Application"
 metadata:
   name: sokos-up-astro-template
-  namespace: min-side
+  namespace: okonomi
   labels:
-    team: min-side
+    team: okonomi
 spec:
   tokenx:
     enabled: true

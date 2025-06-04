@@ -63,7 +63,7 @@ jobs:
         uses: "nais/deploy/actions/deploy@v2"
         env:
           CLUSTER: dev-gcp
-          RESOURCE: nais/dev-gcp/nais.yaml
+          RESOURCE: .nais/naiserator-dev.yaml
           VAR: image=${{ needs.build.outputs.image }},version=${{ github.sha }}
 
   # deploy-prod:
@@ -80,5 +80,5 @@ jobs:
   #       uses: "nais/deploy/actions/deploy@v2"
   #       env:
   #         CLUSTER: prod-gcp
-  #         RESOURCE: nais/prod-gcp/nais.yaml
+  #         RESOURCE: .nais/naiserator-prod.yaml
   #         VAR: image=${{ needs.build.outputs.image }},version=${{ github.sha }}
