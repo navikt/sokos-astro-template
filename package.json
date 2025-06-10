@@ -14,30 +14,30 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
-    "@astrojs/node": "^9.0.0",
-    "@astrojs/react": "^4.1.2",
+    "@astrojs/node": "^9.2.2",
+    "@astrojs/react": "^4.3.0",
     "@navikt/aksel-icons": "6.1.1",
     "@navikt/ds-css": "6.16.2",
     "@navikt/ds-react": "6.16.2",
     "@navikt/oasis": "^3.4.0",
-    "astro": "^5.1.1",
-    "pino-http": "^10.4.0",
+    "astro": "^5.9.2",
+    "pino-http": "^10.5.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "rollup-plugin-import-map": "3.0.0"
   },
   "devDependencies": {
-    "@hono/node-server": "1.11.2",
+    "@hono/node-server": "1.14.4",
     "@types/node": "20.2.5",
     "@types/react": "18.2.64",
     "@types/react-dom": "18.2.21",
-    "hono": "4.6.5",
+    "hono": "4.7.11",
     "husky": "^9.1.7",
-    "postcss": "^8.5.3",
+    "postcss": "^8.5.4",
     "postcss-prefix-selector": "^2.1.1",
     "prettier-plugin-astro": "^0.14.1",
-    "prettier": "3.3.3",
+    "prettier": "3.5.3",
     "tsx": "4.19.4",
-    "typescript": "5.3.3"
+    "typescript": "5.8.3"
   }
 }
