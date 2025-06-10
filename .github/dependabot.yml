@@ -14,7 +14,20 @@ updates:
       time: "08:00"
       timezone: "Europe/Oslo"
     groups:
-      all-minor-updates:
+      aksel:
+        patterns:
+          - "@navikt/aksel-*"
+          - "@navikt/ds-*"
+      react:
+        patterns:
+          - "react"
+          - "react-dom"
+      minor-and-patch:
         update-types:
-          - "minor"
           - "patch"
+          - "minor"
+        exclude-patterns:
+          - "react"
+          - "react-dom"
+          - "@navikt/aksel-*"
+          - "@navikt/ds-*"
