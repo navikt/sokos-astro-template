@@ -23,14 +23,14 @@
     "astro": "^5.9.2",
     "pino-http": "^10.5.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "react-dom": "19.1.0",
     "rollup-plugin-import-map": "3.0.0"
   },
   "devDependencies": {
     "@hono/node-server": "1.14.4",
     "@types/node": "20.2.5",
     "@types/react": "18.2.64",
-    "@types/react-dom": "18.2.21",
+    "@types/react-dom": "19.1.6",
     "hono": "4.7.11",
     "husky": "^9.1.7",
     "postcss": "^8.5.4",
