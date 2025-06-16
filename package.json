@@ -20,7 +20,7 @@
     "@navikt/ds-css": "7.22.0",
     "@navikt/ds-react": "7.22.0",
     "@navikt/oasis": "^3.4.0",
-    "astro": "^5.9.2",
+    "astro": "^5.9.3",
     "pino-http": "^10.5.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -28,16 +28,16 @@
   },
   "devDependencies": {
     "@hono/node-server": "1.14.4",
-    "@types/node": "24.0.0",
+    "@types/node": "24.0.1",
     "@types/react": "18.2.64",
     "@types/react-dom": "18.2.21",
     "hono": "4.7.11",
     "husky": "^9.1.7",
-    "postcss": "^8.5.4",
+    "postcss": "^8.5.5",
     "postcss-prefix-selector": "^2.1.1",
     "prettier-plugin-astro": "^0.14.1",
     "prettier": "3.5.3",
-    "tsx": "4.19.4",
+    "tsx": "4.20.3",
     "typescript": "5.8.3"
   }
 }
