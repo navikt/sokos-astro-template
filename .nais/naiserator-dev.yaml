@@ -19,6 +19,15 @@ spec:
   replicas:
     min: 2
     max: 4
+  azure:
+    application:
+      enabled: true
+      allowAllUsers: false
+      claims:
+        groups:
+          - id: "4a485519-e9aa-483a-a509-0d56816902ff" # 0000-CA-SOKOS-MF-Astro-Template
+        extra:
+          - NAVident
   accessPolicy:
     inbound:
       rules:

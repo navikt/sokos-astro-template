@@ -3,7 +3,6 @@ import { BodyShort, Heading } from "@navikt/ds-react";
 import ClientIsland from "@src/components/ClientIsland";
 import "@src/styles/aksel.css";
 import styles from "@src/styles/index.module.css";
-import type { Language } from "@src/types";
 import logger from "@src/utils/logger";
 import { getOboToken } from "@src/utils/token";
 import { fetchExampleData } from "../utils/fetch";
@@ -19,7 +18,6 @@ try {
   return new Response("Internal Server Error", { status: 503 });
 }
 
-const language = Astro.currentLocale as Language;
 ---
 
 <section class="sokos-up-astro-template">
