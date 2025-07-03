@@ -6,8 +6,6 @@ metadata:
   labels:
     team: okonomi
 spec:
-  tokenx:
-    enabled: true
   image: {{ image }}
   port: 3000
   liveness:
