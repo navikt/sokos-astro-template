@@ -11,23 +11,17 @@ const oboToken = await getOboToken(Astro.locals.token);
 const exampleApiUrl = import.meta.env.EXAMPLE_API_URL;
 let exampleData;
 
-try {
+/* try {
   exampleData = await fetchExampleData(oboToken, exampleApiUrl);
 } catch (error) {
   logger.error("Error fetching example data:", error);
   return new Response("Internal Server Error", { status: 503 });
-}
-
+} */
 ---
 
 <section class="sokos-up-astro-template">
   <div class={styles.microfrontend}>
-    <Heading size="medium" level="2">
-      Hei
-    </Heading>
-    <BodyShort>
-      {exampleData.name}
-    </BodyShort>
+    <BodyShort> Come with me if you want to live. </BodyShort>
     <ClientIsland client:only="react" />
   </div>
 </section>
