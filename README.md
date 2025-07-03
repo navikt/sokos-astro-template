@@ -20,11 +20,3 @@ NOTE: Du bør se på konteksten i filen du endrer.
 3. Start hono mockserver: `npm run mock`
 4. Med mockserver kjørende i egen terminal, start appen: `npm run dev`
 5. Appen nås på http://localhost:4321/
-
-## Henvendelser
-
-Spørsmål knyttet til koden eller prosjektet kan stilles som issues her på github.
-
-## For NAV-ansatte
-
-Interne henvendelser kan sendes via Slack i kanalen [#utbetaling](https://nav-it.slack.com/archives/CKZADNFBP).
