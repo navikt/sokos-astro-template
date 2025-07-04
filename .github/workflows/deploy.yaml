@@ -1,84 +1,50 @@
-name: "Deploy dev&prod"
+name: Deploy application
+
 on:
   push:
     branches:
-      - "main"
-      - "dev-*"
+      - main
+    paths-ignore:
+      - "**.md"
+      - "LICENCE"
+      - "CODEOWNERS"
+      - ".gitignore"
+      - ".github/workflows/build-pr.yaml"
+      - ".github/workflows/manual-deploy.yaml"
+      - ".github/workflows/playwright.yaml"
+      - ".github/workflows/security.yaml"
+      - ".github/workflows/alerts.yaml"
+      - ".nais/alerts-dev.yaml"
+      - ".nais/alerts-prod.yaml"
+      - ".github/dependabot.yaml"
+
+env:
+  TZ: Europe/Oslo
+
+permissions:
+  contents: write
+  id-token: write
 
 jobs:
   build:
-    name: "build"
-    runs-on: "ubuntu-latest"
-
-    permissions:
-      contents: "read"
-      id-token: "write"
-      packages: "write"
-
-    steps:
-      - uses: "actions/checkout@v4"
-      - uses: "actions/setup-node@v4"
-        with:
-          node-version: 20
-          registry-url: "https://npm.pkg.github.com"
-          cache: "npm"
-
-      - name: "Install dependencies"
-        run: "npm ci"
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.READER_TOKEN }}
-
-      - name: "Build application"
-        run: "npm run build"
-        env:
-          ASTRO_KEY: ${{ secrets.ASTRO_KEY }}
-
-    #   - name: "Upload to cdn"
-    #     uses: nais/deploy/actions/cdn-upload/v2@master
-    #     with:
-    #       team: okonomi
-    #       source: ./dist/client/_astro
-    #       destination: 'sokos-up-astro-template'
-
-      - name: "Build and push"
-        uses: nais/docker-build-push@v0
-        id: docker-build-push
-        with:
-          team: okonomi
-          identity_provider: ${{ secrets.NAIS_WORKLOAD_IDENTITY_PROVIDER }}
-          project_id: ${{ vars.NAIS_MANAGEMENT_PROJECT_ID }}
-
-    outputs:
-      image: ${{ steps.docker-build-push.outputs.image }}
+    name: Build/test & push image
+    uses: navikt/mob-gha-workflows/.github/workflows/node-build-push-image-v2.yaml@main
+    secrets: inherit
 
   deploy-dev:
-    runs-on: "ubuntu-latest"
-    permissions:
-      contents: "read"
-      id-token: "write"
-    needs: [build]
-    steps:
-      - uses: "actions/checkout@v4"
-      - name: "Deploy to dev"
-        uses: "nais/deploy/actions/deploy@v2"
-        env:
-          CLUSTER: dev-gcp
-          RESOURCE: .nais/naiserator-dev.yaml
-          VAR: image=${{ needs.build.outputs.image }},version=${{ github.sha }}
+    needs: build
+    name: Deploy to dev
+    uses: navikt/mob-gha-workflows/.github/workflows/nais-app-deploy.yaml@main
+    with:
+      cluster: dev-gcp
+      resource: .nais/naiserator-q1.yaml
+      image: ${{ needs.build.outputs.image }}
 
   # deploy-prod:
-  #   if: github.ref == 'refs/heads/main'
-  #   runs-on: "ubuntu-latest"
-  #   permissions:
-  #     contents: "read"
-  #     id-token: "write"
-  #   needs: [build, update-manifest-prod]
-
-  #   steps:
-  #     - uses: "actions/checkout@v4"
-  #     - name: "Deploy to prod"
-  #       uses: "nais/deploy/actions/deploy@v2"
-  #       env:
-  #         CLUSTER: prod-gcp
-  #         RESOURCE: .nais/naiserator-prod.yaml
-  #         VAR: image=${{ needs.build.outputs.image }},version=${{ github.sha }}
+  #   needs: [build, deploy-dev]
+  #   name: Deploy to prod
+  #   uses: navikt/mob-gha-workflows/.github/workflows/nais-app-deploy.yaml@main
+  #   with:
+  #     cluster: prod-gcp
+  #     resource: .nais/naiserator-prod.yaml
+  #     image: ${{ needs.build.outputs.image }}
