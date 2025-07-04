@@ -1,6 +1,6 @@
 ---
 import { BodyLong, Heading, Table } from "@navikt/ds-react";
-import "@src/styles/aksel.css";
+import Layout from "@src/components/layout/Layout.astro";
 import type { Employee } from "@src/types/Employee";
 import styles from "./_index.module.css";
 
@@ -11,10 +11,10 @@ const data = [
 ];
 ---
 
-<section class="sokos-astro-template">
+<Layout>
   <div class={styles["template-header"]}>
     <Heading spacing level="1" size="large">
-      React grensesnittmal for Utbetalingsportalen
+      Astro grensesnittmal for Utbetalingsportalen
     </Heading>
     <BodyLong>
       Dette er en mal for å bygge mikrofrontend i Utbetalingsportalen
@@ -48,4 +48,4 @@ const data = [
       </Table.Body>
     </Table>
   </div>
-</section>
+</Layout>
