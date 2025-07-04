@@ -1,19 +1,51 @@
 ---
-import { BodyLong, BodyShort, Heading } from "@navikt/ds-react";
-import ClientIsland from "@src/components/ClientIsland";
+import { BodyLong, Heading, Table } from "@navikt/ds-react";
 import "@src/styles/aksel.css";
-import styles from "@src/styles/index.module.css";
+import type { Employee } from "@src/types/Employee";
+import styles from "./_index.module.css";
+
+const data = [
+  { id: 1, name: "Ola Nordmann", profession: "Lærer" },
+  { id: 2, name: "Kari Nordmann", profession: "Sykepleier" },
+  { id: 3, name: "Per Hansen", profession: "Elektriker" },
+];
 ---
 
 <section class="sokos-astro-template">
-  <div class={styles.microfrontend}>
+  <div class={styles["template-header"]}>
     <Heading spacing level="1" size="large">
-      Grensesnittmal for Utbetalingsportalen
+      React grensesnittmal for Utbetalingsportalen
     </Heading>
     <BodyLong>
       Dette er en mal for å bygge mikrofrontend i Utbetalingsportalen
     </BodyLong>
-    <BodyShort> Astro server-side template </BodyShort>
-    <ClientIsland client:only="react" />
+  </div>
+
+  <div class={styles["template-body"]}>
+    <Heading spacing level="2" size="medium"> Ansatte </Heading>
+
+    <Table>
+      <Table.Header>
+        <Table.Row>
+          <Table.HeaderCell scope="col">Id</Table.HeaderCell>
+          <Table.HeaderCell scope="col">Navn</Table.HeaderCell>
+          <Table.HeaderCell scope="col">Yrke</Table.HeaderCell>
+        </Table.Row>
+      </Table.Header>
+
+      <Table.Body>
+        {
+          data?.map((employee: Employee) => {
+            return (
+              <Table.Row key={employee.id}>
+                <Table.HeaderCell scope="row">{employee.id}</Table.HeaderCell>
+                <Table.DataCell>{employee.name}</Table.DataCell>
+                <Table.DataCell>{employee.profession}</Table.DataCell>
+              </Table.Row>
+            );
+          })
+        }
+      </Table.Body>
+    </Table>
   </div>
 </section>

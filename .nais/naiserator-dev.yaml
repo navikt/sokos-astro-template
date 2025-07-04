@@ -37,5 +37,5 @@ spec:
       cpu: "20m"
       memory: 128Mi
   env:
-    - name: EXAMPLE_API_URL
-      value: "https://example.dev.nav.no/api"
+    - name: SOKOS_SKATTEKORT_PERSON_API
+      value: "https://sokos-skattekort-person"

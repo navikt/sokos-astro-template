@@ -6,8 +6,6 @@ import logger from "@src/utils/logger.ts";
 export const onRequest = defineMiddleware(async (context, next) => {
   const token = getToken(context.request.headers);
 
-  logger.info(token);
-
   if (isLocal) {
     return next();
   }
