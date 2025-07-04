@@ -1,5 +1,5 @@
+import { EmployeeListeSchema, EmployeeSchema } from "@schema/EmployeeSchema";
 import { z } from "zod";
-import { EmployeeListeSchema, EmployeeSchema } from "@src/types/schema/EmployeeSchema";
 
 export type EmployeeList = z.infer<typeof EmployeeListeSchema>;
 
