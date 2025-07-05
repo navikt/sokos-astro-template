@@ -27,9 +27,9 @@ spec:
         - application: sokos-utbetalingsportalen
   resources:
     limits:
-      memory: 768Mi
+      memory: 1024Mi
     requests:
-      cpu: "20m"
+      cpu: 50m
       memory: 128Mi
   env:
     - name: SOKOS_SKATTEKORT_PERSON_API
