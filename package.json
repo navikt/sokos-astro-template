@@ -48,6 +48,7 @@
     "*": "prettier --write --ignore-unknown"
   },
   "engines": {
-    "pnpm": ">=9.15"
+    "pnpm": ">=10.13.1",
+    "node": ">=22.17.1"
   }
 }
