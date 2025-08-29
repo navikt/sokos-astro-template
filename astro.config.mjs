@@ -1,6 +1,6 @@
-import { defineConfig } from "astro/config";
-import react from "@astrojs/react";
 import node from "@astrojs/node";
+import react from "@astrojs/react";
+import { defineConfig } from "astro/config";
 import prefixer from "postcss-prefix-selector";
 
 // https://astro.build/config
@@ -28,7 +28,11 @@ export default defineConfig({
       hooks: {
         "astro:build:setup": ({ vite, target }) => {
           if (target === "client") {
-            vite.build.rollupOptions["external"] = ["react", "react-dom"];
+            vite.build.rollupOptions["external"] = [
+              "react",
+              "react-dom",
+              "jsx-runtime",
+            ];
           }
         },
       },
