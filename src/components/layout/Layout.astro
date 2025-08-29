@@ -1,27 +1,7 @@
 ---
-type Language = "nb";
-const language = Astro.currentLocale as Language;
+import "@navikt/ds-css";
 ---
-
-<!doctype html>
-<html lang={language}>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Astro template" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <link
-      rel="preload"
-      href="https://cdn.nav.no/aksel/@navikt/ds-css/7.24.0/index.min.css"
-      as="style"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.nav.no/aksel/@navikt/ds-css/7.24.0/index.min.css"
-    />
-  </head>
-  <section class="sokos-astro-template">
-    <slot />
-  </section>
-
-</html>
+<meta charset="utf-8" />
+<section class="sokos-astro-template">
+  <slot />
+</section>

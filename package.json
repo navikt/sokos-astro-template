@@ -16,6 +16,7 @@
     "@astrojs/node": "^9.2.2",
     "@astrojs/react": "^4.3.0",
     "@navikt/aksel-icons": "7.29.0",
+    "@navikt/ds-css": "7.29.0",
     "@navikt/ds-react": "7.29.0",
     "@navikt/oasis": "^3.8.0",
     "astro": "^5.13.1",

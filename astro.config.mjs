@@ -7,6 +7,7 @@ import prefixer from "postcss-prefix-selector";
 export default defineConfig({
   build: {
     assetsPrefix: "https://cdn.nav.no/min-side/tms-microfrontend-test",
+    inlineStylesheets: "always",
   },
   vite: {
     css: {
@@ -33,13 +34,6 @@ export default defineConfig({
       },
     },
   ],
-  i18n: {
-    defaultLocale: "nb",
-    locales: ["nb"],
-    routing: {
-      prefixDefaultLocale: false,
-    },
-  },
   output: "server",
   adapter: node({
     mode: "standalone",
