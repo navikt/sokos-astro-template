@@ -18,7 +18,7 @@
     "@navikt/aksel-icons": "7.29.0",
     "@navikt/ds-react": "7.29.0",
     "@navikt/oasis": "^3.8.0",
-    "astro": "^5.12.3",
+    "astro": "^5.13.1",
     "pino-http": "^10.5.0",
     "react": "19.1.1",
     "react-dom": "19.1.1",
