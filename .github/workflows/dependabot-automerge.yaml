@@ -22,6 +22,14 @@ permissions:
 
 jobs:
   dependabot-automerge:
+    runs-on: ubuntu-latest
     if: ${{ github.actor == 'dependabot[bot]' }}
-    uses: navikt/mob-gha-workflows/.github/workflows/dependabot-automerge.yaml@main
-    secrets: inherit
+    steps:
+      - name: Automerge Dependabot PRs
+        uses: navikt/automerge-dependabot@v1
+        with:
+          token: ${{ github.token }}
+          auto-approve: 'true'
+          merge-method: 'squash'
+          semver-filter: 'patch,minor'
+          minimum-age-of-pr: '0'
