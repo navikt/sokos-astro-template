@@ -1,8 +1,7 @@
 name: Dependabot Auto-merge
 
 on:
-  pull_request_target:
-    types: [opened, synchronize, reopened]
+  pull_request:
     branches: [main]
     paths-ignore:
       - "**.md"
@@ -11,7 +10,7 @@ on:
       - ".gitignore"
       - ".github/workflows/build-pr.yaml"
       - ".github/workflows/deploy.yaml"
-      - ".github/workflows/manual-deploy-dev.yaml"
+      - ".github/workflows/manual-deploy.yaml"
       - ".github/workflows/playwright.yaml"
       - ".github/workflows/security.yaml"
       - ".github/dependabot.yaml"
@@ -23,14 +22,6 @@ permissions:
 
 jobs:
   dependabot-automerge:
-    runs-on: ubuntu-latest
     if: ${{ github.actor == 'dependabot[bot]' }}
-    steps:
-      - name: Automerge Dependabot PRs
-        uses: navikt/automerge-dependabot@main
-        with:
-          token: ${{ github.token }}
-          auto-approve: 'true'
-          merge-method: 'squash'
-          semver-filter: 'patch,minor'
-          minimum-age-of-pr: '0'
+    uses: navikt/mob-gha-workflows/.github/workflows/dependabot-automerge.yaml@main
+    secrets: inherit
