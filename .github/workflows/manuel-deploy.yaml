@@ -26,7 +26,7 @@ jobs:
   deploy-manual:
     needs: build
     name: ${{ inputs.environment == 'prod' && 'Deploy to prod-gcp' || 'Deploy to dev-gcp' }}
-    uses: navikt/mob-gha-workflows/.github/workflows/nais-app-deploy.yaml@main
+    uses: navikt/mob-gha-workflows/.github/workflows/nais-deploy.yaml@main
     with:
       cluster: ${{ inputs.environment == 'prod' && 'prod-gcp' || 'dev-gcp' }}
       resource: .nais/naiserator-${{ inputs.environment }}.yaml
