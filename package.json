@@ -32,7 +32,7 @@
     "@types/node": "24.7.2",
     "@types/react": "19.2.2",
     "@types/react-dom": "19.2.1",
-    "hono": "4.9.11",
+    "hono": "4.10.2",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.4",
     "postcss": "^8.5.6",
