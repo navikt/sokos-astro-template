@@ -20,7 +20,7 @@
     "@navikt/ds-react": "7.32.3",
     "@navikt/oasis": "^3.8.0",
     "astro": "^5.14.8",
-    "pino-http": "^10.5.0",
+    "pino-http": "^11.0.0",
     "react": "19.2.0",
     "react-dom": "19.2.0",
     "rollup-plugin-import-map": "3.0.0",
