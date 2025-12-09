@@ -12,14 +12,14 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.5",
+    "@astrojs/check": "^0.9.6",
     "@astrojs/node": "^9.5.1",
     "@astrojs/react": "^4.4.2",
     "@navikt/aksel-icons": "7.35.1",
     "@navikt/ds-css": "7.35.1",
     "@navikt/ds-react": "7.35.1",
     "@navikt/oasis": "^4.1.1",
-    "astro": "^5.16.0",
+    "astro": "^5.16.3",
     "pino-http": "^11.0.0",
     "react": "19.2.0",
     "react-dom": "19.2.0",
@@ -39,7 +39,7 @@
     "postcss-prefix-selector": "^2.1.1",
     "prettier": "3.7.4",
     "prettier-plugin-astro": "^0.14.1",
-    "stylelint": "^16.26.0",
+    "stylelint": "^16.26.1",
     "stylelint-config-standard": "^39.0.1",
     "tsx": "4.21.0",
     "typescript": "5.9.3"
