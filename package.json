@@ -21,8 +21,8 @@
     "@navikt/oasis": "^4.1.1",
     "astro": "^5.16.3",
     "pino-http": "^11.0.0",
-    "react": "19.2.0",
-    "react-dom": "19.2.0",
+    "react": "19.2.1",
+    "react-dom": "19.2.1",
     "rollup-plugin-import-map": "3.0.0",
     "zod": "^4.1.13"
   },
