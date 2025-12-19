@@ -16,6 +16,8 @@ on:
       - ".github/workflows/manual-deploy.yaml"
       - ".github/workflows/playwright.yaml"
       - ".github/dependabot.yaml"
+  repository_dispatch:
+    types: [dependabot-deploy]   
 
 env:
   TZ: Europe/Oslo
