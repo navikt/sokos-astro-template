@@ -19,12 +19,12 @@
     "@navikt/ds-css": "7.35.2",
     "@navikt/ds-react": "7.35.2",
     "@navikt/oasis": "^4.1.1",
-    "astro": "^5.16.5",
+    "astro": "^5.16.6",
     "pino-http": "^11.0.0",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "rollup-plugin-import-map": "3.0.0",
-    "zod": "^4.1.13"
+    "zod": "^4.2.1"
   },
   "devDependencies": {
     "@hono/node-server": "1.19.7",
@@ -32,7 +32,7 @@
     "@types/node": "24.10.2",
     "@types/react": "19.2.7",
     "@types/react-dom": "19.2.3",
-    "hono": "4.10.8",
+    "hono": "4.11.1",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7",
     "postcss": "^8.5.6",
