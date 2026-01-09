@@ -33,8 +33,8 @@ NB! Navngi følgende: `sokos-up-appNavn`, f.eks: `sokos-up-venteregister`
 3. Installere dependencies `pnpm install`
 4. Start appen med to følgende måter:
 
-- Mot [hono.dev](https://hono.dev/) mock server -> `pnpm run mock` så deretter starte frontend `pnpm run dev`
-- Mot en backend ????
+- Uten [hono.dev](https://hono.dev/) `mock`-server -> `pnpm run dev`
+- Med [hono.dev](https://hono.dev/) `mock`-server -> `pnpm run dev:mock`
 
 5. Appen nås på [http://localhost:4321](http://localhost:4321)
 
