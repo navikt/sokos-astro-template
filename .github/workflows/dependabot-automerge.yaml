@@ -14,3 +14,4 @@ jobs:
       PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
     with: 
       minimum-age-of-pr: "0"
+      merge-method: "squash"
