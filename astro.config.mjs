@@ -28,8 +28,10 @@ export default defineConfig({
 					if (target === "client") {
 						vite.build.rollupOptions.external = [
 							"react",
+							"react/jsx-runtime",
 							"react-dom",
-							"jsx-runtime",
+							"react-dom/client",
+							"scheduler",
 						];
 					}
 				},
