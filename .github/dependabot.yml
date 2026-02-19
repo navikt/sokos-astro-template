@@ -21,6 +21,9 @@ updates:
         patterns:
           - "react"
           - "react-dom"
+      astro:
+        patterns:
+          - "astro"
       minor-and-patch:
         update-types:
           - "patch"
@@ -30,3 +33,4 @@ updates:
           - "react-dom"
           - "@navikt/aksel-*"
           - "@navikt/ds-*"
+          - "astro"
