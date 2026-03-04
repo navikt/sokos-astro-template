@@ -52,8 +52,8 @@ importers:
         specifier: 2.4.4
         version: 2.4.4
       '@hono/node-server':
-        specifier: 1.19.9
-        version: 1.19.9(hono@4.12.1)
+        specifier: 1.19.10
+        version: 1.19.10(hono@4.12.1)
       '@navikt/aksel-stylelint':
         specifier: ^7.37.0
         version: 7.37.0
@@ -852,8 +852,8 @@ packages:
   '@floating-ui/utils@0.2.10':
     resolution: {integrity: sha512-aGTxbpbg8/b5JfU1HXSrbH3wXZuLPJcNEcZQFMxLs3oSzgtVu6nFPkbbGGUvBcUjKV2YyB9Wxxabo+HEH9tcRQ==}
 
-  '@hono/node-server@1.19.9':
-    resolution: {integrity: sha512-vHL6w3ecZsky+8P5MD+eFfaGTyCeOHUIFYMGpQGbrBTSmNNoxv0if69rEZ5giu36weC5saFuznL411gRX7bJDw==}
+  '@hono/node-server@1.19.10':
+    resolution: {integrity: sha512-hZ7nOssGqRgyV3FVVQdfi+U4q02uB23bpnYpdvNXkYTRRyWx84b7yf1ans+dnJ/7h41sGL3CeQTfO+ZGxuO+Iw==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
       hono: ^4
@@ -3734,7 +3734,7 @@ snapshots:
 
   '@floating-ui/utils@0.2.10': {}
 
-  '@hono/node-server@1.19.9(hono@4.12.1)':
+  '@hono/node-server@1.19.10(hono@4.12.1)':
     dependencies:
       hono: 4.12.1
 
