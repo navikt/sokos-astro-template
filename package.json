@@ -30,7 +30,7 @@
 		"zod": "^4.3.6"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "2.4.8",
+		"@biomejs/biome": "2.4.9",
 		"@hono/node-server": "1.19.11",
 		"@navikt/aksel-stylelint": "^7.37.0",
 		"@types/node": "25.5.0",
