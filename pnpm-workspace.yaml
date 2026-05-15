@@ -1,9 +1,12 @@
 overrides:
   yaml: 2.8.3
+  devalue: 5.8.1
 engineStrict: true
 saveExact: true
 ignoreScripts: false
 minimumReleaseAge: 10080
+minimumReleaseAgeExclude:
+  - devalue
 allowBuilds:
   esbuild: true
   protobufjs: true
