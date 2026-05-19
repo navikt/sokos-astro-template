@@ -17,7 +17,7 @@
 	},
 	"dependencies": {
 		"@astrojs/check": "0.9.9",
-		"@astrojs/node": "10.0.6",
+		"@astrojs/node": "10.1.0",
 		"@astrojs/react": "5.0.4",
 		"@navikt/aksel-icons": "7.37.0",
 		"@navikt/ds-css": "7.37.0",
@@ -28,20 +28,20 @@
 		"react": "19.2.5",
 		"react-dom": "19.2.5",
 		"rollup-plugin-import-map": "3.0.0",
-		"zod": "4.4.1"
+		"zod": "4.4.3"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "2.4.13",
+		"@biomejs/biome": "2.4.15",
 		"@hono/node-server": "1.19.14",
 		"@navikt/aksel-stylelint": "7.37.0",
-		"@types/node": "25.6.0",
+		"@types/node": "25.7.0",
 		"@types/react": "19.2.14",
 		"@types/react-dom": "19.2.3",
 		"concurrently": "9.2.1",
 		"hono": "4.12.18",
 		"husky": "9.1.7",
 		"lint-staged": "16.4.0",
-		"postcss": "8.5.12",
+		"postcss": "8.5.14",
 		"postcss-prefix-selector": "2.1.1",
 		"prettier": "3.8.3",
 		"prettier-plugin-astro": "0.14.1",
