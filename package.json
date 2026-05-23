@@ -48,7 +48,7 @@
 		"stylelint": "16.26.1",
 		"stylelint-config-standard": "39.0.1",
 		"tsx": "4.22.0",
-		"typescript": "5.9.3"
+		"typescript": "6.0.3"
 	},
 	"lint-staged": {
 		"*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}": "biome check --write --no-errors-on-unmatched",
