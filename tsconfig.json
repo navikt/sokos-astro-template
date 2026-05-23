@@ -1,19 +1,18 @@
 {
 	"extends": "astro/tsconfigs/strict",
 	"compilerOptions": {
-		"baseUrl": ".",
 		"jsx": "react-jsx",
 		"jsxImportSource": "react",
-		"verbatimModuleSyntax": false,
+		"types": ["astro/client"],
 		"paths": {
-			"@components/*": ["src/components/*"],
-			"@layouts/*": ["src/layouts/*"],
-			"@pages/*": ["src/pages/*"],
-			"@types/*": ["src/types/*"],
-			"@schema/*": ["src/types/schema/*"],
-			"@utils/*": ["src/utils/*"]
+			"@components/*": ["./src/components/*"],
+			"@layouts/*": ["./src/layouts/*"],
+			"@pages/*": ["./src/pages/*"],
+			"@types/*": ["./src/types/*"],
+			"@schema/*": ["./src/types/schema/*"],
+			"@utils/*": ["./src/utils/*"]
 		}
 	},
-	"include": ["src/**/*"],
-	"exclude": ["dist", "node_modules"]
+	"include": [".astro/types.d.ts", "src/**/*"],
+	"exclude": ["node_modules", "dist"]
 }
