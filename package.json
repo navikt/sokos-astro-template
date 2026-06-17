@@ -23,7 +23,7 @@
 		"@navikt/ds-css": "7.37.0",
 		"@navikt/ds-react": "7.37.0",
 		"@navikt/oasis": "4.1.4",
-		"astro": "6.3.3",
+		"astro": "6.4.6",
 		"pino-http": "11.0.0",
 		"react": "19.2.6",
 		"react-dom": "19.2.6",
@@ -38,7 +38,7 @@
 		"@types/react": "19.2.14",
 		"@types/react-dom": "19.2.3",
 		"concurrently": "9.2.1",
-		"hono": "4.12.21",
+		"hono": "4.12.25",
 		"husky": "9.1.7",
 		"lint-staged": "16.4.0",
 		"postcss": "8.5.14",
@@ -56,8 +56,8 @@
 		"*.css": "stylelint --fix"
 	},
 	"engines": {
-		"pnpm": ">=11.1.2",
+		"pnpm": ">=11.5.2",
 		"node": ">=24.14.1"
 	},
-	"packageManager": "pnpm@11.1.2+sha512.415a1cc25974731e75455c1468371be74c5aa5fb7621b50d4056d222451609f11412f23fd602e6169f1e060466641f798597e1be961a10688836a67b16569499"
+	"packageManager": "pnpm@11.5.2+sha512.71c631e382066efc25625d5cf029075de07b61b37f6e27350fbd84b1bda5864c8c1967adc280776b45c30a715c0359a3be08fef42d5bb09e2b99029979692916"
 }
