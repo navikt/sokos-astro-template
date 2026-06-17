@@ -40,7 +40,7 @@
 		"concurrently": "9.2.1",
 		"hono": "4.12.25",
 		"husky": "9.1.7",
-		"lint-staged": "16.4.0",
+		"lint-staged": "17.0.7",
 		"postcss": "8.5.14",
 		"postcss-prefix-selector": "2.1.1",
 		"prettier": "3.8.3",
