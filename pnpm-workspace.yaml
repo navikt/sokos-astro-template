@@ -1,7 +1,7 @@
 overrides:
   shell-quote: 1.8.4
   esbuild: 0.28.1
-  yaml: 2.8.3
+  yaml: 2.9.0
 engineStrict: true
 saveExact: true
 ignoreScripts: false
