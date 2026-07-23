@@ -23,7 +23,7 @@
 		"@navikt/ds-css": "7.37.0",
 		"@navikt/ds-react": "7.37.0",
 		"@navikt/oasis": "4.1.4",
-		"astro": "6.4.6",
+		"astro": "7.1.0",
 		"pino-http": "11.0.0",
 		"react": "19.2.7",
 		"react-dom": "19.2.7",
