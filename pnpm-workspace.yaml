@@ -1,7 +1,5 @@
 overrides:
-  shell-quote: 1.8.4
-  esbuild: 0.28.1
-  yaml: 2.9.0
+  shell-quote: 1.10.0
 engineStrict: true
 saveExact: true
 ignoreScripts: false
@@ -11,30 +9,18 @@ allowBuilds:
   protobufjs: true
   sharp: true
 minimumReleaseAgeExclude:
-  - '@esbuild/aix-ppc64@0.28.1'
-  - '@esbuild/android-arm64@0.28.1'
-  - '@esbuild/android-arm@0.28.1'
-  - '@esbuild/android-x64@0.28.1'
-  - '@esbuild/darwin-arm64@0.28.1'
-  - '@esbuild/darwin-x64@0.28.1'
-  - '@esbuild/freebsd-arm64@0.28.1'
-  - '@esbuild/freebsd-x64@0.28.1'
-  - '@esbuild/linux-arm64@0.28.1'
-  - '@esbuild/linux-arm@0.28.1'
-  - '@esbuild/linux-ia32@0.28.1'
-  - '@esbuild/linux-loong64@0.28.1'
-  - '@esbuild/linux-mips64el@0.28.1'
-  - '@esbuild/linux-ppc64@0.28.1'
-  - '@esbuild/linux-riscv64@0.28.1'
-  - '@esbuild/linux-s390x@0.28.1'
-  - '@esbuild/linux-x64@0.28.1'
-  - '@esbuild/netbsd-arm64@0.28.1'
-  - '@esbuild/netbsd-x64@0.28.1'
-  - '@esbuild/openbsd-arm64@0.28.1'
-  - '@esbuild/openbsd-x64@0.28.1'
-  - '@esbuild/openharmony-arm64@0.28.1'
-  - '@esbuild/sunos-x64@0.28.1'
-  - '@esbuild/win32-arm64@0.28.1'
-  - '@esbuild/win32-ia32@0.28.1'
-  - '@esbuild/win32-x64@0.28.1'
-  - esbuild@0.28.1
+  - '@astrojs/compiler-binding-darwin-arm64@0.3.2'
+  - '@astrojs/compiler-binding-darwin-x64@0.3.2'
+  - '@astrojs/compiler-binding-linux-arm64-gnu@0.3.2'
+  - '@astrojs/compiler-binding-linux-arm64-musl@0.3.2'
+  - '@astrojs/compiler-binding-linux-x64-gnu@0.3.2'
+  - '@astrojs/compiler-binding-linux-x64-musl@0.3.2'
+  - '@astrojs/compiler-binding-wasm32-wasi@0.3.2'
+  - '@astrojs/compiler-binding-win32-arm64-msvc@0.3.2'
+  - '@astrojs/compiler-binding-win32-x64-msvc@0.3.2'
+  - '@astrojs/compiler-binding@0.3.2'
+  - '@astrojs/compiler-rs@0.3.2'
+  - '@astrojs/internal-helpers@0.10.2'
+  - '@astrojs/markdown-satteri@0.3.5'
+  - '@napi-rs/wasm-runtime@1.2.0'
+  - astro@7.1.6
