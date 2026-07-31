@@ -2,9 +2,13 @@
 // Mikrofrontend-fragment: Denne layouten rendres som et fragment uten <html>/<head>/<body>
 // fordi den embeddes i container (sokos-utbetalingsportalen).
 import "@navikt/ds-css";
+import styles from "./Layout.module.css";
 ---
 
 <meta charset="utf-8" />
-<section class="sokos-astro-template" aria-label="Utbetalingsportalen">
+<section
+  class={`sokos-astro-template ${styles["layout"]}`}
+  aria-label="Utbetalingsportalen"
+>
   <slot />
 </section>
