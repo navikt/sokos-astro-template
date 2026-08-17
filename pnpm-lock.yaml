@@ -56,7 +56,7 @@ importers:
         version: 2.5.7
       '@hono/node-server':
         specifier: 2.1.0
-        version: 2.1.0(hono@4.13.0)
+        version: 2.1.0(hono@4.13.2)
       '@navikt/aksel-stylelint':
         specifier: 7.37.0
         version: 7.37.0
@@ -73,8 +73,8 @@ importers:
         specifier: 10.0.4
         version: 10.0.4
       hono:
-        specifier: 4.13.0
-        version: 4.13.0
+        specifier: 4.13.2
+        version: 4.13.2
       husky:
         specifier: 9.1.7
         version: 9.1.7
@@ -1787,8 +1787,8 @@ packages:
   hastscript@9.0.1:
     resolution: {integrity: sha512-g7df9rMFX/SPi34tyGCyUBREQoKkapwdY/T04Qn9TDWfHhAYt4/I0gMVirzK5wEzeUqIjEB+LXC/ypb7Aqno5w==}
 
-  hono@4.13.0:
-    resolution: {integrity: sha512-jhunvfHWxd7J5EFfSgH4xsYJzSe/lfqbUCxiyyeaQasUsXeEHXtzVid+7EOGByc5JnFa23SSFL3Y2RV/z1T+eQ==}
+  hono@4.13.2:
+    resolution: {integrity: sha512-JydRilDRkYBQMt9qR9U92mXxmbGqsqSn/IKOrh4e7/gEbn+0zSr8igTu0obwJoNGN4sez28DIql7FBHWydoJpA==}
     engines: {node: '>=16.9.0'}
 
   hookified@1.15.1:
@@ -3517,9 +3517,9 @@ snapshots:
 
   '@floating-ui/utils@0.2.12': {}
 
-  '@hono/node-server@2.1.0(hono@4.13.0)':
+  '@hono/node-server@2.1.0(hono@4.13.2)':
     dependencies:
-      hono: 4.13.0
+      hono: 4.13.2
 
   '@img/colour@1.1.0':
     optional: true
@@ -4578,7 +4578,7 @@ snapshots:
       property-information: 7.2.0
       space-separated-tokens: 2.0.2
 
-  hono@4.13.0: {}
+  hono@4.13.2: {}
 
   hookified@1.15.1: {}
 
