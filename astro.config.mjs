@@ -13,7 +13,7 @@ export default defineConfig({
 				plugins: [
 					prefixer({
 						prefix: ".sokos-astro-template", // brukes for å unngå å lekke css ut av mikrofrontenden
-						ignoreFiles: [/module.css/],
+						ignoreFiles: [/node_modules/, /module.css/],
 					}),
 				],
 			},

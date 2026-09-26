@@ -38,6 +38,10 @@ NB! Navngi følgende: `sokos-up-appNavn`, f.eks: `sokos-up-venteregister`
 
 5. Appen nås på [http://localhost:4321](http://localhost:4321)
 
+## Frontend APM
+
+`@nais/apm` starter automatisk i dev-gcp og prod-gcp. Den rapporterer frontend-feil og traces. Oppsettet fjerner query-parametere fra rapporterte URL-er. Lokalt starter ikke APM.
+
 ## Design
 
 Det finnes et utkast til en designguide kan man basere seg på: [Kjerneoppsett Utbetalingsportalen](https://navno-my.sharepoint.com/:o:/g/personal/julie_utgard_nav_no/EtV6P-sYimZNsACTYqZmSbsBLeSlsvc6PP2svso_H09dZA?e=KSY5SO)
