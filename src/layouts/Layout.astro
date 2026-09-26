@@ -2,9 +2,16 @@
 // Mikrofrontend-fragment: Denne layouten rendres som et fragment uten <html>/<head>/<body>
 // fordi den embeddes i container (sokos-utbetalingsportalen).
 import "@navikt/ds-css";
+import { renderNaisMetaTags } from "@nais/apm";
+import NaisApm from "@utils/observability/NaisApm";
 import styles from "./Layout.module.css";
+
+const enableObservability =
+  process.env.NAIS_CLUSTER_NAME === "dev-gcp" ||
+  process.env.NAIS_CLUSTER_NAME === "prod-gcp";
 ---
 
+{enableObservability && <Fragment set:html={renderNaisMetaTags()} />}
 <meta charset="utf-8" />
 <section
   class={`sokos-astro-template ${styles["layout"]}`}
@@ -12,3 +19,4 @@ import styles from "./Layout.module.css";
 >
   <slot />
 </section>
+{enableObservability && <NaisApm client:only="react" />}
