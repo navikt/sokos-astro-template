@@ -25,6 +25,7 @@ spec:
     inbound:
       rules:
         - application: sokos-utbetalingsportalen
+          namespace: okonomi
   resources:
     limits:
       memory: 512Mi
