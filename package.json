@@ -32,7 +32,7 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.5.15",
-		"@hono/node-server": "2.1.4",
+		"@hono/node-server": "2.1.5",
 		"@navikt/aksel-stylelint": "7.37.0",
 		"@types/node": "26.6.5",
 		"@types/react": "19.3.0",
@@ -41,7 +41,7 @@
 		"hono": "4.13.13",
 		"husky": "9.1.7",
 		"lint-staged": "17.6.0",
-		"postcss": "8.5.30",
+		"postcss": "8.5.31",
 		"postcss-prefix-selector": "2.2.1",
 		"prettier": "3.9.10",
 		"prettier-plugin-astro": "1.1.1",
